@@ -1,0 +1,39 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.walletTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.25rem 0;
+}
+.addCardButton {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1.1rem;
+    text-align: center;
+    border: 1px solid #1a1a1a;
+    border-radius: 0.6rem;
+    background-color: #fff;
+    color: #1a1a1a;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.addCardButton:hover {
+    background-color: #f5f5f5;
+}

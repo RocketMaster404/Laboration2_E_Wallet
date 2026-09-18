@@ -1,14 +1,12 @@
-import React from "react";
-import CardContainer from "../cardContainer/CardContainer";
-
-// Denna component tar emot och kort och visar upp infon via CarcContainer - denan representerar det aktiva kortet i bygggnaden av wallet layouten
+import styles from "./ActiveCard.module.css"
+import CardContainer from '../../cardContainer/CardContainer';
 
 function ActiveCard({ card, bank }) {
     
     return (
         <div>
-            <p>ACTIVE CARD</p>
-            <div>
+            <p className={styles.CardLabel}>ACTIVE CARD</p>
+            <div className={styles.activeContainer}>
                 <CardContainer
                     cardNumber={card.cardNumber}
                     cardHolderName={card.cardName}
@@ -20,4 +18,4 @@ function ActiveCard({ card, bank }) {
     );
 }
 
-export default ActiveCard;
+export default ActiveCard

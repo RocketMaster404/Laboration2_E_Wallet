@@ -1,6 +1,6 @@
 import { BrowserRouter, createBrowserRouter } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import CreateCardPage from "../pages/CreateCardPage";
+import HomePage from "../pages/HomePage/HomePage";
+import CreateCardPage from "../pages/createCard/CreateCardPage";
 
 const router = createBrowserRouter([
     {
@@ -9,8 +9,8 @@ const router = createBrowserRouter([
     },
     {
         path: "/createCard",
-        element: <CreateCardPage/>
-    }
+        element: <CreateCardPage />,
+    },
 ]);
 
 export default router;

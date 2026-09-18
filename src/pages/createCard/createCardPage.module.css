@@ -1,0 +1,14 @@
+.backButton {
+    margin-top: 2rem;
+    height: 4rem;
+    width: 12rem;
+    font-style: bolder;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: #1a1a1a4c;
+    color: white;
+    cursor: pointer;
+}

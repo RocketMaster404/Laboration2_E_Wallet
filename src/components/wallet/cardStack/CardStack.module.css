@@ -1,0 +1,13 @@
+.cardStack {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.stackedCardWrapper {
+    position: relative;
+    cursor: pointer;
+    margin-top: -12.5rem;
+}
+.stackedCardWrapper:first-child {
+    margin-top: 0;
+}
