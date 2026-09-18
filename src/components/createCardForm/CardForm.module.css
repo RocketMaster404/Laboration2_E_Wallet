@@ -1,0 +1,114 @@
+.createCardPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+.showNewCardContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.formRow .formGroup:first-child {
+    flex: 1;
+}
+
+.formRow .formGroup:last-child {
+    flex: 0 0 6rem;
+}
+
+.formGroup input,
+.formGroup select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardForm label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.cardForm input,
+.cardForm select {
+    padding: 0.9rem 1rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    background-color: #fff;
+    color: #1a1a1a;
+
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+}
+
+.cardForm input:focus,
+.cardForm select:focus {
+    border-color: #1a1a1a;
+}
+
+.cardForm input::placeholder {
+    color: #b3b3b3;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cardForm select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%231a1a1a' stroke-width='1.5' fill='none' fill-rule='evenodd'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+}
+
+.submitButton {
+    padding: 1.1rem;
+    border: none;
+    border-radius: 0.6rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+
+    -webkit-border-radius: 0.6rem;
+}
+
+.submitButton:hover {
+    background-color: #333;
+}
