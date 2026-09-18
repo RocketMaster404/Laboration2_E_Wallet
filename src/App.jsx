@@ -1,14 +1,17 @@
 import "./App.css";
 import { RouterProvider } from "react-router-dom";
-import banks from "../src/data/banks";
+import { Provider } from "react-redux";
 import router from "./route/router";
+import store from "./store/Store";
 
 function App() {
-    
-
-    return <>
-    <RouterProvider router={router}/>
-    </>;
+    return (
+        <>
+            <Provider store={store}>
+                <RouterProvider router={router} />
+            </Provider>
+        </>
+    );
 }
 
 export default App;
