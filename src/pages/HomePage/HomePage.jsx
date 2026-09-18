@@ -6,6 +6,11 @@ import styles from "./HomePage.module.css";
 import CardStack from "../../components/wallet/cardStack/CardStack";
 import { Link } from "react-router-dom";
 
+
+// Detta är startsidan för hemsidan,här ser man sin Wallet (jag har lagt in fake data så 4 kort visas från start). Korten hämtas från redux
+// activeId styr uppdelning av hur korten visas - kortet med activeId visas i componenten ActiveCard medan CardStack filtrerar ut kortet med ActiveId och visar resterande
+// Vilket kort som är aktivt kan användaren välja genom att klicka på kortet
+
 function HomePage() {
     const cards = useSelector((state) => state.cards.cards);
     const [activeId, setActiveId] = useState(cards[0].id);

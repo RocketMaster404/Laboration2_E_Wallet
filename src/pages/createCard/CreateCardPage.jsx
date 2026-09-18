@@ -7,19 +7,19 @@ import { addCard } from "../../reducers/cardReducer";
 
 
 
-// Denna sida används för att skapa kort - vi använder oss av vår form
-// Vi får all info från cardForm och skapar objektet som läggs i redux (handleAddCard)
+// Denna sida används för att skapa kort - vi använder oss av vår form.
+// Vi får all info från CardForm och skapar objektet som läggs i redux (handleAddCard).
+// Nytt id sätts via högsta befintliga (maxId) så det inte krockar.
 
 function CreateCardPage() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
     const cards = useSelector((state) => state.cards.cards);
     const maxId = cards.length > 0 ? Math.max(...cards.map((c) => c.id)) : 0;
 
     function handleAddCard(cardInfo) {
         const card = {
-            id: maxId +1,
+            id: maxId + 1,
             ...cardInfo,
         };
         dispatch(addCard(card));

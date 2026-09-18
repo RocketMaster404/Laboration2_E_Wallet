@@ -1,6 +1,7 @@
 import styles from "./ActiveCard.module.css"
 import CardContainer from '../../cardContainer/CardContainer';
 
+// Denna komponent visar det "aktiva kortet" Vi tar emot kort samt bank (för styling)
 function ActiveCard({ card, bank }) {
     
     return (
