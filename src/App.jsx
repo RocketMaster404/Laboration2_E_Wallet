@@ -10,6 +10,7 @@ import store from "./store/Store";
 // Det gör att componenterna blir återanvändbara ex CardContainer används på startsidan samt vd skapandet av kort.
 
 //Varje component ligger i en mapp med tillhörande css fil. Detta gör det enklare att navigera i mapparna - och man undviker stora css filer. 
+// Jag har dock satt reset och centrering av body, alltså sånt som inte hör till en enskild component i app.css
 // Istället för globala css filer använder jag mig av module.css - på så vis kan jag återanvända klassnamn utan att behöva oroa mig för att skriva över någon annan styling.
 
 function App() {
