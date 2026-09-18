@@ -1,14 +1,19 @@
 import chipLight from "../../assets/images/chip-light.svg";
 import styles from "./CardContainer.module.css";
 
-// Denna compnent visar visuellt kortet - kommer användas i flera delar av programmet. 
-// vissa delar använder sig av inline styling - bank objectet har logo/färg vilket vi tar emot via bank propsen. 
+// Denna compnent visar visuellt kortet - kommer användas i flera delar av programmet.
+// vissa delar använder sig av inline styling - bank objectet har logo/färg vilket vi tar emot via bank propsen.
 // På så vis kan jag återanvända komponenten oavsett bank
 
 function CardContainer({ cardNumber, cardHolderName, validDate, bank }) {
     const backgroundColor = bank?.color || "#756767c9";
+    const themeClass = bank?.theme === "dark" ? styles.dark : styles.light;
+
     return (
-        <div className={styles.cardContainer} style={{ backgroundColor }}>
+        <div
+            className={`${styles.cardContainer} ${themeClass}`}
+            style={{ backgroundColor }}
+        >
             <div className={styles.chipLogoContainer}>
                 <div className={styles.chipContainer}>
                     <img src={chipLight} alt="" />

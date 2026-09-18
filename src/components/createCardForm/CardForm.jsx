@@ -5,7 +5,7 @@ import CardContainer from "../cardContainer/CardContainer";
 
 // Denna component skapar nya kort - använder mig av en form för att ta emot info från avnändare. Återanvänder min cardContainer för att visa kortet live för användaren.
 // Hämtar min "bank data" och mappar ut dessa för att ge användaren val av bank via selection sektionen.
-// när all infon är mottagen skickar jag upp den via onSumbit
+// när all infon är mottagen skickar jag upp kortinformationen via  onSumbit
 
 function CardForm({ onSubmit }) {
     const [cardNumber, setCardNumber] = useState("");

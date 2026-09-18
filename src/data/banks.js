@@ -11,24 +11,28 @@ const banks = [
         name: "bitcoin",
         color: "#ebbb39",
         logo: bitconLogo,
+        theme: "dark",
     },
     {
         id: 2,
         name: "ninja",
         color: "#0f0f0f",
         logo: ninjaLogo,
+        theme: "light",
     },
     {
         id: 3,
         name: "evilCorp",
         color: "#e93131",
         logo: evilLogo,
+        theme: "light",
     },
     {
         id: 4,
         name: "blockChain",
         color: "#8430e4",
         logo: blockChainLogo,
+        theme: "light",
     },
 ];
 
