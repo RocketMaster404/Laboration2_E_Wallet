@@ -1,16 +1,14 @@
 import "./App.css";
-import CardContainer from "./components/cardContainer/CardContainer";
+import { RouterProvider } from "react-router-dom";
 import banks from "../src/data/banks";
-import CardForm from "./components/createCardForm/CardForm";
+import router from "./route/router";
 
 function App() {
-    const bank = banks[0];
+    
 
-    return (
-        <>
-          <CardForm/>
-        </>
-    );
+    return <>
+    <RouterProvider router={router}/>
+    </>;
 }
 
 export default App;
